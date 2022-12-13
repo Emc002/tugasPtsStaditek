@@ -56,8 +56,6 @@ class CarsController
       'updated_at' => '2022-13-12 14:19:10'
     ];
     self::$model->updateCars($updateCars2, $id_cars);
-    // echo json_encode(self::$model->updateCars($updateCars, $id_cars));
-    // die();
     Router::redirect('GITHUB/CARDEALER-MINIFRAMEWORK/Public/cars');
   }
 
