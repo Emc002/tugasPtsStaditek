@@ -43,24 +43,11 @@ class GuestBuyerController
       'created_at' => '2022-12-13 11:11:11',
       'updated_at' => null
     ];
-    // var_dump($saveCars, "data cars");
     print_r(self::$model->saveGuestBuyer($saveGuestBuyer));
-
-    // self::$model->saveCars($saveCars);
-    // var_dump(self::$model->saveCars($saveCars));
-    // die();
-    // Router::redirect('GITHUB/CARDEALER-MINIFRAMEWORK/Public/cars');
   }
 
   public function updateAddGuestBuyer($id_guest)
   {
-    // $updateCars = [
-    //   'brand_car' => $_POST['brand_car'],
-    //   'series_car' => $_POST['series_car'],
-    //   'cars_price' => $_POST['cars_price'],
-    //   'cars_stock' => $_POST['cars_stock'],
-    //   'updated_at' => $_POST['updated_at']
-    // ];
     $updateGuestBuyer = [
       'guest_name' => "Camus",
       'guest_address' => "USA",
@@ -69,7 +56,6 @@ class GuestBuyerController
       'updated_at' => '2022-12-14 22:22:22'
     ];
     self::$model->updateGuestBuyer($updateGuestBuyer, $id_guest);
-    // echo json_encode(self::$model->updateCars($updateCars, $id_cars));
     die();
     Router::redirect('GITHUB/CARDEALER-MINIFRAMEWORK/Public/guestBuyer');
   }
