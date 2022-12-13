@@ -45,24 +45,11 @@ class ShipmentController
       'created_at' => '2022-12-12 15:43:53',
       'updated_at' => null
     ];
-    // var_dump($saveCars, "data cars");
     print_r(self::$model->saveShipment($saveShipment));
-
-    // self::$model->saveCars($saveCars);
-    // var_dump(self::$model->saveCars($saveCars));
-    // die();
-    // Router::redirect('GITHUB/CARDEALER-MINIFRAMEWORK/Public/cars');
   }
 
   public function updateAddShipment($id_shipment)
   {
-    // $updateCars = [
-    //   'brand_car' => $_POST['brand_car'],
-    //   'series_car' => $_POST['series_car'],
-    //   'cars_price' => $_POST['cars_price'],
-    //   'cars_stock' => $_POST['cars_stock'],
-    //   'updated_at' => $_POST['updated_at']
-    // ];
     $updateShipment = [
       'id_employe_account' => 2,
       'id_payment_confirmation' => 1,
@@ -71,7 +58,6 @@ class ShipmentController
       'updated_at' => '2022-13-12 14:19:10'
     ];
     self::$model->updateShipment($updateShipment, $id_shipment);
-    // echo json_encode(self::$model->updateCars($updateCars, $id_cars));
     die();
     Router::redirect('GITHUB/CARDEALER-MINIFRAMEWORK/Public/shipment');
   }

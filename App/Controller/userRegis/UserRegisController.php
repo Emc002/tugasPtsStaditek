@@ -46,13 +46,7 @@ class UserRegisController
       'created_at' => '2022-12-12 15:43:53',
       'updated_at' => null
     ];
-    // var_dump($saveCars, "data cars");
     print_r(self::$model->saveUserRegis($saveUserRegis));
-
-    // self::$model->saveCars($saveCars);
-    // var_dump(self::$model->saveCars($saveCars));
-    // die();
-    // Router::redirect('GITHUB/CARDEALER-MINIFRAMEWORK/Public/cars');
   }
 
   public function updateAddUserRegis($id_user_regis)

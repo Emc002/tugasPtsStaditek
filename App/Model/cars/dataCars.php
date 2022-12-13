@@ -56,11 +56,4 @@ class dataCars extends Database
     $statement = self::$conn->prepare("DELETE FROM cars where id_cars=$id_cars");
     $statement->execute();
   }
-
-  // public function findEmail($data)
-  // {
-  //   $statement = self::$conn->prepare("SELECT * FROM manager WHERE email=:email");
-  //   $statement->execute(['email' => $data]);
-  //   return $statement->fetch(\PDO::FETCH_OBJ);
-  // }
 }

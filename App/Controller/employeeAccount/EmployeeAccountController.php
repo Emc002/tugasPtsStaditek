@@ -43,20 +43,11 @@ class EmployeeAccountController
       'created_at' => '2022-12-12 15:43:53',
       'updated_at' => null
     ];
-
     self::$model->saveEmployeeAccount($saveEmployeeAccount);
-    // Router::redirect('GITHUB/CARDEALER-MINIFRAMEWORK/Public/useraccount');
   }
 
   public function updateAddEmployeeAccount($id_employee_account)
   {
-    // $updateCars = [
-    //   'brand_car' => $_POST['brand_car'],
-    //   'series_car' => $_POST['series_car'],
-    //   'cars_price' => $_POST['cars_price'],
-    //   'cars_stock' => $_POST['cars_stock'],
-    //   'updated_at' => $_POST['updated_at']
-    // ];
     $updateEmployeeAccount = [
       'id_employe_data' => "3",
       'email' => "edison@gmail.com",
@@ -65,7 +56,6 @@ class EmployeeAccountController
       'updated_at' => '2022-15-12 21:43:53',
     ];
     self::$model->updateEmployeeAccount($updateEmployeeAccount, $id_employee_account);
-    // echo json_encode(self::$model->updateCars($updateCars, $id_cars));
     die();
     Router::redirect('GITHUB/CARDEALER-MINIFRAMEWORK/Public/useraccount');
   }

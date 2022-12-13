@@ -43,20 +43,11 @@ class UserAccountController
       'created_at' => '2022-12-12 15:43:53',
       'updated_at' => null
     ];
-
     self::$model->saveUserAccount($saveUserAccount);
-    // Router::redirect('GITHUB/CARDEALER-MINIFRAMEWORK/Public/useraccount');
   }
 
   public function updateAddUserAccount($id_user_account)
   {
-    // $updateCars = [
-    //   'brand_car' => $_POST['brand_car'],
-    //   'series_car' => $_POST['series_car'],
-    //   'cars_price' => $_POST['cars_price'],
-    //   'cars_stock' => $_POST['cars_stock'],
-    //   'updated_at' => $_POST['updated_at']
-    // ];
     $updateUserAccount = [
       'id_user_regis' => "5",
       'email' => "tesla@gmail.com",

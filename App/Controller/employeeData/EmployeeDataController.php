@@ -43,24 +43,11 @@ class EmployeeDataController
       'created_at' => '2022-12-12 15:43:53',
       'updated_at' => null
     ];
-    // var_dump($saveCars, "data cars");
     print_r(self::$model->saveEmployeeData($saveEmployeeData));
-
-    // self::$model->saveCars($saveCars);
-    // var_dump(self::$model->saveCars($saveCars));
-    // die();
-    // Router::redirect('GITHUB/CARDEALER-MINIFRAMEWORK/Public/cars');
   }
 
   public function updateAddEmployeeData($id_employee)
   {
-    // $updateCars = [
-    //   'brand_car' => $_POST['brand_car'],
-    //   'series_car' => $_POST['series_car'],
-    //   'cars_price' => $_POST['cars_price'],
-    //   'cars_stock' => $_POST['cars_stock'],
-    //   'updated_at' => $_POST['updated_at']
-    // ];
     $updateEmployeeData = [
       'employee_name' => "EDISON",
       'employee_address' => "USA",
@@ -69,7 +56,6 @@ class EmployeeDataController
       'updated_at' => '2022-16-12 14:19:10'
     ];
     self::$model->updateEmployeeData($updateEmployeeData, $id_employee);
-    // echo json_encode(self::$model->updateCars($updateCars, $id_cars));
     die();
     Router::redirect('GITHUB/CARDEALER-MINIFRAMEWORK/Public/employeeData');
   }
