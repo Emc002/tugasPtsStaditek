@@ -1,0 +1,10 @@
+Options All -Indexes
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-ErrorDocument
+RewriteRule ^([\s\S]*)$ index.php/$1 [L,NC,QSA]
+
+
+#redirect jika error
+ErrorDocument 404 /PHP%20BASIC/PHP_OOP_MAS_R/404.html
